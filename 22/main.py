@@ -9,9 +9,9 @@ def parse():
     return secrets
 
 
-def gen(secret, n):
-    price_by_sequence = defaultdict(list)
+def gen(secret, n, price_by_seq):
     sequence = deque([])
+    seen = set()
     price = secret % 10
     for i in range(n):
         secret = prune(mix(secret, secret * 64))
@@ -23,12 +23,18 @@ def gen(secret, n):
         if len(sequence) == 4:
             sequence.popleft()
             sequence.append(diff)
-            price_by_sequence[tuple(sequence)].append(price)
+            if tuple(sequence) in seen:
+                continue
+            price_by_seq[tuple(sequence)] += price
+            seen.add(tuple(sequence))
         else:
             sequence.append(diff)
             if len(sequence) == 4:
-                price_by_sequence[tuple(sequence)].append(price)
-    return secret, price_by_sequence
+                if tuple(sequence) in seen:
+                    continue
+                price_by_seq[tuple(sequence)] += price
+                seen.add(tuple(sequence))
+    return secret
 
 
 def mix(secret, value):
@@ -40,25 +46,17 @@ def prune(secret):
 
 
 def search(secrets):
-    sequences = set()
-    prices = []
+    price_by_seq = defaultdict(int)
     for secret in secrets:
-        _, prices_by_seq = gen(secret, n=2000)
-        prices.append(prices_by_seq)
-        sequences.update(prices_by_seq.keys())
-
-    maxprice = float("-inf")
-    for j, seq in enumerate(sequences):
-        # if j % 1000 == 0:
-        #     print(j, maxprice)
-        P = sum(price_by_seq[seq][0] for price_by_seq in prices if price_by_seq[seq])
-        maxprice = max(maxprice, P)
-    return maxprice
+        gen(secret, n=2000, price_by_seq=price_by_seq)
+    return max(price_by_seq.values())
 
 
 def main():
     secrets = parse()
-    print(f"Part 1: {sum(gen(s, n=2000)[0] for s in secrets)}")
+    print(
+        f"Part 1: {sum(gen(s, n=2000, price_by_seq=defaultdict(int)) for s in secrets)}"
+    )
     print(f"Part 2: {search(secrets)}")
 
 
