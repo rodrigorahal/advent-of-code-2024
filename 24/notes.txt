@@ -1,0 +1,246 @@
+swap z08 and z09
+dnn AND dqd -> z08
+sbs XOR fqs -> z09
+
+swap z15 and z16
+
+swap z22 and z23
+
+swap z31 and z32
+
+ctt OR vhw -> z31
+x31 AND y31 -> ctt
+
+rns AND hnn -> vhw
+y31 XOR x31 -> rns
+cns OR dqc -> hnn
+tnd AND hhk -> cns
+y30 XOR x30 -> tnd
+gnc OR cnw -> hhk
+y29 AND x29 -> gnc
+scr AND fvs -> cnw
+x29 XOR y29 -> fvs
+str OR pkg -> scr
+x28 AND y28 -> str
+cwm AND vtc -> pkg
+y28 XOR x28 -> cwm
+wps OR fhw -> vtc
+x27 AND y27 -> fhw
+hkc AND gpt -> wps
+y27 XOR x27 -> gpt
+jqn OR jjv -> hkc
+x26 AND y26 -> jjv
+ssc AND jfm -> jqn
+x26 XOR y26 -> jfm
+mtt OR gtn -> ssc
+x25 AND y25 -> mtt
+bcj AND hds -> gtn
+x25 XOR y25 -> hds
+wwp OR rdj -> bcj
+y24 AND x24 -> rdj
+ftc AND hrv -> wwp
+y24 XOR x24 -> ftc
+vsq OR mkf -> hrv
+qtk AND spp -> vsq
+x23 XOR y23 -> qtk
+
+
+swapped ('dnn', 'AND', 'dqd', 'z08') and ('sbs', 'XOR', 'fqs', 'z09')
+swapped ('dnn', 'AND', 'dqd', 'z08') and ('vmc', 'OR', 'ffj', 'fqs')
+swapped ('dnn', 'AND', 'dqd', 'z08') and ('dqd', 'XOR', 'dnn', 'ffj')
+
+swapped ('tpr', 'XOR', 'dwp', 'z15') and ('phm', 'XOR', 'fwp', 'z16')
+swapped ('tpr', 'XOR', 'dwp', 'z15') and ('kfm', 'OR', 'knt', 'phm')
+swapped ('tpr', 'XOR', 'dwp', 'z15') and ('y15', 'XOR', 'x15', 'kfm')
+swapped ('wkm', 'OR', 'pwq', 'tpr') and ('y15', 'XOR', 'x15', 'kfm')
+swapped ('x15', 'AND', 'y15', 'dwp') and ('y15', 'XOR', 'x15', 'kfm')
+swapped ('y14', 'AND', 'x14', 'wkm') and ('y15', 'XOR', 'x15', 'kfm')
+swapped ('rkt', 'AND', 'vjc', 'pwq') and ('y15', 'XOR', 'x15', 'kfm')
+swapped ('y15', 'XOR', 'x15', 'kfm') and ('x15', 'AND', 'y15', 'dwp')
+swapped ('y15', 'XOR', 'x15', 'kfm') and ('wkm', 'OR', 'pwq', 'tpr')
+swapped ('y15', 'XOR', 'x15', 'kfm') and ('y14', 'AND', 'x14', 'wkm')
+swapped ('y15', 'XOR', 'x15', 'kfm') and ('rkt', 'AND', 'vjc', 'pwq')
+
+swapped ('y22', 'AND', 'x22', 'z22') and ('spp', 'XOR', 'qtk', 'z23')
+swapped ('y22', 'AND', 'x22', 'z22') and ('jbd', 'OR', 'gjh', 'spp')
+swapped ('y22', 'AND', 'x22', 'z22') and ('pgt', 'XOR', 'hgq', 'gjh')
+swapped ('y22', 'AND', 'x22', 'z22') and ('y22', 'XOR', 'x22', 'hgq')
+
+swapped ('ctt', 'OR', 'vhw', 'z31') and ('jdr', 'XOR', 'wvk', 'z32')
+swapped ('ctt', 'OR', 'vhw', 'z31') and ('rns', 'XOR', 'hnn', 'jdr')
+swapped ('x31', 'AND', 'y31', 'ctt') and ('y31', 'XOR', 'x31', 'rns')
+swapped ('x31', 'AND', 'y31', 'ctt') and ('jdr', 'XOR', 'wvk', 'z32')
+swapped ('x31', 'AND', 'y31', 'ctt') and ('rns', 'XOR', 'hnn', 'jdr')
+swapped ('x31', 'AND', 'y31', 'ctt') and ('y31', 'XOR', 'x31', 'rns')
+swapped ('rns', 'AND', 'hnn', 'vhw') and ('jdr', 'XOR', 'wvk', 'z32')
+swapped ('rns', 'AND', 'hnn', 'vhw') and ('rns', 'XOR', 'hnn', 'jdr')
+
+
+jdr,phm,spp,z08,z09,z15,z22,z31
+jdr,phm,spp,vhw,z08,z09,z15,z22
+gjh,jdr,phm,z08,z09,z15,z22,z31
+gjh,jdr,phm,vhw,z08,z09,z15,z22
+hgq,jdr,phm,z08,z09,z15,z22,z31
+hgq,jdr,phm,vhw,z08,z09,z15,z22
+jdr,kfm,spp,z08,z09,z15,z22,z31
+jdr,kfm,spp,vhw,z08,z09,z15,z22
+gjh,jdr,kfm,z08,z09,z15,z22,z31
+gjh,jdr,kfm,vhw,z08,z09,z15,z22
+hgq,jdr,kfm,z08,z09,z15,z22,z31
+hgq,jdr,kfm,vhw,z08,z09,z15,z22
+jdr,kfm,spp,tpr,z08,z09,z22,z31
+jdr,kfm,spp,tpr,vhw,z08,z09,z22
+gjh,jdr,kfm,tpr,z08,z09,z22,z31
+gjh,jdr,kfm,tpr,vhw,z08,z09,z22
+hgq,jdr,kfm,tpr,z08,z09,z22,z31
+hgq,jdr,kfm,tpr,vhw,z08,z09,z22
+dwp,jdr,kfm,spp,z08,z09,z22,z31
+dwp,jdr,kfm,spp,vhw,z08,z09,z22
+dwp,gjh,jdr,kfm,z08,z09,z22,z31
+dwp,gjh,jdr,kfm,vhw,z08,z09,z22
+dwp,hgq,jdr,kfm,z08,z09,z22,z31
+dwp,hgq,jdr,kfm,vhw,z08,z09,z22
+jdr,kfm,spp,wkm,z08,z09,z22,z31
+jdr,kfm,spp,vhw,wkm,z08,z09,z22
+gjh,jdr,kfm,wkm,z08,z09,z22,z31
+gjh,jdr,kfm,vhw,wkm,z08,z09,z22
+hgq,jdr,kfm,wkm,z08,z09,z22,z31
+hgq,jdr,kfm,vhw,wkm,z08,z09,z22
+jdr,kfm,pwq,spp,z08,z09,z22,z31
+jdr,kfm,pwq,spp,vhw,z08,z09,z22
+gjh,jdr,kfm,pwq,z08,z09,z22,z31
+gjh,jdr,kfm,pwq,vhw,z08,z09,z22
+hgq,jdr,kfm,pwq,z08,z09,z22,z31
+hgq,jdr,kfm,pwq,vhw,z08,z09,z22
+fqs,jdr,phm,spp,z08,z15,z22,z31
+fqs,jdr,phm,spp,vhw,z08,z15,z22
+fqs,gjh,jdr,phm,z08,z15,z22,z31
+fqs,gjh,jdr,phm,vhw,z08,z15,z22
+fqs,hgq,jdr,phm,z08,z15,z22,z31
+fqs,hgq,jdr,phm,vhw,z08,z15,z22
+fqs,jdr,kfm,spp,z08,z15,z22,z31
+fqs,jdr,kfm,spp,vhw,z08,z15,z22
+fqs,gjh,jdr,kfm,z08,z15,z22,z31
+fqs,gjh,jdr,kfm,vhw,z08,z15,z22
+fqs,hgq,jdr,kfm,z08,z15,z22,z31
+fqs,hgq,jdr,kfm,vhw,z08,z15,z22
+fqs,jdr,kfm,spp,tpr,z08,z22,z31
+fqs,jdr,kfm,spp,tpr,vhw,z08,z22
+fqs,gjh,jdr,kfm,tpr,z08,z22,z31
+fqs,gjh,jdr,kfm,tpr,vhw,z08,z22
+fqs,hgq,jdr,kfm,tpr,z08,z22,z31
+fqs,hgq,jdr,kfm,tpr,vhw,z08,z22
+dwp,fqs,jdr,kfm,spp,z08,z22,z31
+dwp,fqs,jdr,kfm,spp,vhw,z08,z22
+dwp,fqs,gjh,jdr,kfm,z08,z22,z31
+dwp,fqs,gjh,jdr,kfm,vhw,z08,z22
+dwp,fqs,hgq,jdr,kfm,z08,z22,z31
+dwp,fqs,hgq,jdr,kfm,vhw,z08,z22
+fqs,jdr,kfm,spp,wkm,z08,z22,z31
+fqs,jdr,kfm,spp,vhw,wkm,z08,z22
+fqs,gjh,jdr,kfm,wkm,z08,z22,z31
+fqs,gjh,jdr,kfm,vhw,wkm,z08,z22
+fqs,hgq,jdr,kfm,wkm,z08,z22,z31
+fqs,hgq,jdr,kfm,vhw,wkm,z08,z22
+fqs,jdr,kfm,pwq,spp,z08,z22,z31
+fqs,jdr,kfm,pwq,spp,vhw,z08,z22
+fqs,gjh,jdr,kfm,pwq,z08,z22,z31
+fqs,gjh,jdr,kfm,pwq,vhw,z08,z22
+fqs,hgq,jdr,kfm,pwq,z08,z22,z31
+fqs,hgq,jdr,kfm,pwq,vhw,z08,z22
+ffj,jdr,phm,spp,z08,z15,z22,z31
+ffj,jdr,phm,spp,vhw,z08,z15,z22
+ffj,gjh,jdr,phm,z08,z15,z22,z31
+ffj,gjh,jdr,phm,vhw,z08,z15,z22
+ffj,hgq,jdr,phm,z08,z15,z22,z31
+ffj,hgq,jdr,phm,vhw,z08,z15,z22
+ffj,jdr,kfm,spp,z08,z15,z22,z31
+ffj,jdr,kfm,spp,vhw,z08,z15,z22
+ffj,gjh,jdr,kfm,z08,z15,z22,z31
+ffj,gjh,jdr,kfm,vhw,z08,z15,z22
+ffj,hgq,jdr,kfm,z08,z15,z22,z31
+ffj,hgq,jdr,kfm,vhw,z08,z15,z22
+ffj,jdr,kfm,spp,tpr,z08,z22,z31
+ffj,jdr,kfm,spp,tpr,vhw,z08,z22
+ffj,gjh,jdr,kfm,tpr,z08,z22,z31
+ffj,gjh,jdr,kfm,tpr,vhw,z08,z22
+ffj,hgq,jdr,kfm,tpr,z08,z22,z31
+ffj,hgq,jdr,kfm,tpr,vhw,z08,z22
+dwp,ffj,jdr,kfm,spp,z08,z22,z31
+dwp,ffj,jdr,kfm,spp,vhw,z08,z22
+dwp,ffj,gjh,jdr,kfm,z08,z22,z31
+dwp,ffj,gjh,jdr,kfm,vhw,z08,z22
+dwp,ffj,hgq,jdr,kfm,z08,z22,z31
+dwp,ffj,hgq,jdr,kfm,vhw,z08,z22
+ffj,jdr,kfm,spp,wkm,z08,z22,z31
+ffj,jdr,kfm,spp,vhw,wkm,z08,z22
+ffj,gjh,jdr,kfm,wkm,z08,z22,z31
+ffj,gjh,jdr,kfm,vhw,wkm,z08,z22
+ffj,hgq,jdr,kfm,wkm,z08,z22,z31
+ffj,hgq,jdr,kfm,vhw,wkm,z08,z22
+ffj,jdr,kfm,pwq,spp,z08,z22,z31
+ffj,jdr,kfm,pwq,spp,vhw,z08,z22
+ffj,gjh,jdr,kfm,pwq,z08,z22,z31
+ffj,gjh,jdr,kfm,pwq,vhw,z08,z22
+ffj,hgq,jdr,kfm,pwq,z08,z22,z31
+ffj,hgq,jdr,kfm,pwq,vhw,z08,z22
+jdr,kfm,spp,tpr,z15,z16,z22,z31
+jdr,kfm,spp,tpr,vhw,z15,z16,z22
+gjh,jdr,kfm,tpr,z15,z16,z22,z31
+gjh,jdr,kfm,tpr,vhw,z15,z16,z22
+hgq,jdr,kfm,tpr,z15,z16,z22,z31
+hgq,jdr,kfm,tpr,vhw,z15,z16,z22
+dwp,jdr,kfm,spp,z15,z16,z22,z31
+dwp,jdr,kfm,spp,vhw,z15,z16,z22
+dwp,gjh,jdr,kfm,z15,z16,z22,z31
+dwp,gjh,jdr,kfm,vhw,z15,z16,z22
+dwp,hgq,jdr,kfm,z15,z16,z22,z31
+dwp,hgq,jdr,kfm,vhw,z15,z16,z22
+jdr,kfm,spp,wkm,z15,z16,z22,z31
+jdr,kfm,spp,vhw,wkm,z15,z16,z22
+gjh,jdr,kfm,wkm,z15,z16,z22,z31
+gjh,jdr,kfm,vhw,wkm,z15,z16,z22
+hgq,jdr,kfm,wkm,z15,z16,z22,z31
+hgq,jdr,kfm,vhw,wkm,z15,z16,z22
+jdr,kfm,pwq,spp,z15,z16,z22,z31
+jdr,kfm,pwq,spp,vhw,z15,z16,z22
+gjh,jdr,kfm,pwq,z15,z16,z22,z31
+gjh,jdr,kfm,pwq,vhw,z15,z16,z22
+hgq,jdr,kfm,pwq,z15,z16,z22,z31
+hgq,jdr,kfm,pwq,vhw,z15,z16,z22
+jdr,phm,spp,vhw,z15,z22,z31,z32
+ctt,jdr,phm,spp,vhw,z15,z22,z32
+gjh,jdr,phm,vhw,z15,z22,z31,z32
+ctt,gjh,jdr,phm,vhw,z15,z22,z32
+hgq,jdr,phm,vhw,z15,z22,z31,z32
+ctt,hgq,jdr,phm,vhw,z15,z22,z32
+jdr,kfm,spp,vhw,z15,z22,z31,z32
+ctt,jdr,kfm,spp,vhw,z15,z22,z32
+gjh,jdr,kfm,vhw,z15,z22,z31,z32
+ctt,gjh,jdr,kfm,vhw,z15,z22,z32
+hgq,jdr,kfm,vhw,z15,z22,z31,z32
+ctt,hgq,jdr,kfm,vhw,z15,z22,z32
+jdr,kfm,spp,tpr,vhw,z22,z31,z32
+ctt,jdr,kfm,spp,tpr,vhw,z22,z32
+gjh,jdr,kfm,tpr,vhw,z22,z31,z32
+ctt,gjh,jdr,kfm,tpr,vhw,z22,z32
+hgq,jdr,kfm,tpr,vhw,z22,z31,z32
+ctt,hgq,jdr,kfm,tpr,vhw,z22,z32
+dwp,jdr,kfm,spp,vhw,z22,z31,z32
+ctt,dwp,jdr,kfm,spp,vhw,z22,z32
+dwp,gjh,jdr,kfm,vhw,z22,z31,z32
+ctt,dwp,gjh,jdr,kfm,vhw,z22,z32
+dwp,hgq,jdr,kfm,vhw,z22,z31,z32
+ctt,dwp,hgq,jdr,kfm,vhw,z22,z32
+jdr,kfm,spp,vhw,wkm,z22,z31,z32
+ctt,jdr,kfm,spp,vhw,wkm,z22,z32
+gjh,jdr,kfm,vhw,wkm,z22,z31,z32
+ctt,gjh,jdr,kfm,vhw,wkm,z22,z32
+hgq,jdr,kfm,vhw,wkm,z22,z31,z32
+ctt,hgq,jdr,kfm,vhw,wkm,z22,z32
+jdr,kfm,pwq,spp,vhw,z22,z31,z32
+ctt,jdr,kfm,pwq,spp,vhw,z22,z32
+gjh,jdr,kfm,pwq,vhw,z22,z31,z32
+ctt,gjh,jdr,kfm,pwq,vhw,z22,z32
+hgq,jdr,kfm,pwq,vhw,z22,z31,z32
+ctt,hgq,jdr,kfm,pwq,vhw,z22,z32
